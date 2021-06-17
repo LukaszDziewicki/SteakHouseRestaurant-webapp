@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/img/steakHouse.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Steak House</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        
+        <div class="brand">
+          <a href="#home"><h1><span>S</span>teak <span>H</span>ouse</h1></a>
+        </div>
+
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#home" data-after="Home">Home</a></li>
+            <li><a href="#menu" data-after="Menu">Menu</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="#contactForm" data-after="Contact">Book Table</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Home Section  -->
+  <section id="home">
+    <div class="home container">
+      <div class= "welcome"> 
+        <h1>Best <span></span></h1>
+        <h1>Steak House <span></span></h1>
+        <h1>in Europe <span></span></h1>
+        <a href="#menu" type="button" class="cta">Check our menu</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Home Section  -->
+
+
+
+  <!-- Menu Section -->
+  
+  <section id="menu" class="menu section-bg">
+
+      <div class="section-title">
+        <br>
+        <br>
+        <h2>Menu</h2>
+        
+      </div>
+      
+      <div class="row aos-init aos-animate">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="menu-filters">
+            <li class="btn active" onclick="filterSelection('all')"> All </li>
+            <li class="btn" onclick="filterSelection('starters')"> Starters </li>
+            <li class="btn" onclick="filterSelection('burgers')"> Burgers </li>
+            <li class="btn" onclick="filterSelection('speciality')"> Specialty </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="menu container">
+
+        <div class="filterDiv burgers">
+          <img src="img/burgery/bacon_burger.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Bacon Burger</a><span>$5.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Butter roll / Beef / Onion / Bacon
+          </div>
+        </div>
+
+        <div class="filterDiv burgers">
+          <img src="img/burgery/bbq_burger.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">BBQ Burger</a><span>$6.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Butter roll / Beef / Onion / BBQ
+          </div>
+        </div>
+
+        <div class="filterDiv burgers">
+          <img src="img/burgery/eggs_burger.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Egg Burger</a><span>$7.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Butter roll / Beef / Onion / Egg
+          </div>
+        </div>
+
+        <div class="filterDiv burgers">
+          <img src="img/burgery/cheese_burger.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Cheese Burger</a><span>$8.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Butter roll / Beef / Onion / Cucumber / Cheese
+          </div>
+        </div>
+
+        <div class="filterDiv starters">
+          <img src="img/przystawki/crispy_calamari.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Calmari</a><span>$9.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Grilled Calmari with Lemon and roasted red pesto
+          </div>
+        </div>
+
+        <div class="filterDiv starters">
+          <img src="img/przystawki/buffalo_wings.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Buffalo Wings</a><span>$4.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Buffalo Wings with Spicy sose, chilii Habanero
+          </div>
+        </div>
+
+        <div class="filterDiv starters">
+          <img src="img/przystawki/hot_dog.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Hot Dog</a><span>$4.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Hot Dog
+          </div>
+        </div>
+        <div class="filterDiv starters">
+          <img src="img/przystawki/pancakes.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Pancakes</a><span>$4.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Pancakes with clone syrope and strawberries
+          </div>
+        </div>
+
+        <div class="filterDiv starters">
+          <img src="img/przystawki/prawns.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Prawns with lemon</a><span>$4.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Grilled shrimps with lemon 
+          </div>
+        </div>
+
+        <div class="filterDiv starters">
+          <img src="img/przystawki/tacos.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Tacos</a><span>$9.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Fresh Tacos spinach, crisp romaine, tomatoes, and Greek olives
+          </div>
+        </div>
+
+        <div class="filterDiv starters">
+          <img src="img/przystawki/shrimps_bread.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#"> Garlic Shrimps </a><span>$9.95</span>
+          </div>
+          <div class="menu-ingredients">
+           Fresh Garlic Shrimps with garlic bread
+          </div>
+        </div>
+
+        <div class="filterDiv speciality">
+          <img src="img/specjały/Fish_chips.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Fish and Chips</a><span>$9.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Fresh Fish and chips, crisp romaine, tomatoes, and Greek olives
+          </div>
+        </div>
+
+        <div class="filterDiv speciality">
+          <img src="img/specjały/lobser.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Lobster</a><span>$9.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Lobster with Garlic Lemon 
+          </div>
+        </div>
+
+        <div class="filterDiv speciality">
+          <img src="img/specjały/pork .jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Pork Rolls</a><span>$12.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Plump Pork meat rolls, mayo and crisp lettuce on a toasted bulky roll
+          </div>
+        </div>
+
+        <div class="filterDiv speciality">
+          <img src="img/specjały/steak_2.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Steak New York</a><span>$12.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Well done / Medium rare / Rare / Blue
+          </div>
+        </div>
+
+        <div class="filterDiv speciality">
+          <img src="img/specjały/steak.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#"> Steak Wagyu </a><span>$12.95</span>
+          </div> 
+          <div class="menu-ingredients">
+            Well done / Medium rare / Rare / Blue
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <br>
+  </section>
+  
+  
+  
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/steakHouse.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title"> About  US </h1>
+        
+        <h2>Restaurant</h2>
+            <p> The Steakhouse proudly offers casual upscale dining in a comfortable atmosphere.
+                 Our beautiful restaurant features: award winning beer, mesquite grill, fusion sushi,
+                raw bar, woodfire pizza oven, wild game, fine wine cellar, wine bar & martini lounge,
+                premium liquors, live music, outdoor dining and much more.</p>
+        
+        <h2>Catering</h2>
+            <p> The Steakhouse proudly offers casual upscale dining in a comfortable atmosphere.
+                Our beautiful restaurant features: award winning beer, mesquite grill, fusion sushi,
+                raw bar, woodfire pizza oven, wild game, fine wine cellar, wine bar & martini lounge,
+                premium liquors, live music, outdoor dining and much more.</p>
+
+        <h2>Brewery</h2>
+            <p> The Steakhouse proudly offers casual upscale dining in a comfortable atmosphere.
+                Our beautiful restaurant features: award winning beer, mesquite grill, fusion sushi,
+                raw bar, woodfire pizza oven, wild game, fine wine cellar, wine bar & martini lounge,
+                premium liquors, live music, outdoor dining and much more.</p>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div class="section-title">
+        <br>
+        <br>
+        <h2 style="font-size: inherit">Contact</h2> 
+        
+      </div>
+      
+      
+      <div class="contact-items">
+        
+          <p style="line-height: 24px;"><span>Beef Steak House<br> sp. z o.o.<br>
+            Al. Kozie 185<br>
+            02-222 Lublin</span><br><br />
+  
+            <span>NIP: </span> 52123446149 <br>
+            <span>REGON: </span> 141231487 <br>
+            <span>KRS: </span> 0000423557<br><br />
+  
+            <span>Numer<br> rachunku bankowego:</span><br>
+            06 1020 1055 0000 1234 5511 1233<br><br />
+  
+            <span>Adres korespondencyjny:</span> <br> 
+            Stekowa 27<br>
+            02-924 Lublin</p>
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64453779.906186484!2d-127.38622655004428!3d9.599872987621072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc8093110263%3A0xd214cc68fd7f1d0c!2s932%20Hilgard%20Ave%2C%20Los%20Angeles%2C%20CA%2090024%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1619135146932!5m2!1spl!2spl" 
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" margin-left="50px"></iframe>
+          
+          </div>
+    </div>
+    
+  </section>
+  <!-- End Contact Section -->
+
+
+
+
+
+
+  <section id="contactForm">
+    <div class="contactForm container">
+      <div class="section-title">
+        <br>
+        <br>
+        <h2 style="font-size: inherit; color: white;">Book Table</h2>
+        
+      </div>
+     <form action="#" method="post" th:action="@{/index/saveReservation}" th:object="${reservation}">
+       <label for="1fname">Name</label>
+       <input required autofocus="autofocus" type="text" id="1fname" name="name" placeholder="Place name" maxlength="25">
+       <label for="2fname">Surname</label>
+       <input required autofocus="autofocus" type="text" id="2fname" name="surname" placeholder="Place surname" maxlength="25">
+       <label for="3fname">Email</label>
+       <input required autofocus="autofocus" type="text" id="3fname" name="email"  placeholder="Place email" maxlength="30">
+       <label for="3fname">Choose Restaurant</label>
+       <select th:name="location">
+         <option value="de">Germany - Berlin - Hoofen 15/5</option>
+         <option value="nl">Netherlands - Amsterdam - LongStreet 20/15</option>
+         <option value="pl">Poland - Warsaw - Jerozilimska 19/26</option>
+         <option value="lv">Latvia - Lavska 105</option>
+       </select>
+
+       <label>Choose a table :</label>
+       <br>
+       <select th:name="table" required>
+         <option value="2">2 persons table</option>
+         <option value="4">4 persons table</option>
+         <option value="6">6 persons table</option>
+         <option value="8+">8+ persons table</option>
+       </select>
+
+
+         <label>Choose your preferred date:
+           <br>
+           <input required style="margin-left: 2%; margin-top: 1%; margin-bottom: 1%" type="date" th:name="date" min="2021-05-26" max="2021-07-30">
+         </label>
+       <br>
+
+
+       <label>Choose a time for your dinner:</label>
+       <br>
+       <input required type="time" style="margin-left: 2%; margin-top: 1%; margin-bottom: 1%" th:name ="hour" min="09:00" max="21:00" />
+
+       <small>Restaurant hours are 9am to 11pm</small>
+       <br>
+
+      <label for="3fname">Choose estimate time</label>
+       <br>
+       <select required th:name="howLong">
+         <option value="2h">2h</option>
+         <option value="3h">3h</option>
+         <option value="4h">4h</option>
+         <option value="+5h">+5h</option>
+       </select>
+
+
+       <label for="1message">Special info</label>
+       <textarea id="1message" name="message" placeholder="Write message" maxlength="225">
+         </textarea>
+          <button class="button" type="submit">Send</button>
+          <button class="button" type="reset">Reset</button>
+          </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>S</span>TEAK <span>H</span>OUSE</h1></div>
+      <h2>Original Steak House Website</h2>
+
+      <br>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="img/facebook.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="img/instagram.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="img/twitter.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2021 Łukasz Dziewicki. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="js/app.js"></script>
+</body>
+</html>
